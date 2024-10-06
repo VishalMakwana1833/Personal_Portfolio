@@ -1,0 +1,508 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-color: rgb(5, 5, 38);
+    color: white;
+    font-family: "Poppins", sans-serif;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(53, 53, 132);
+  }
+
+  nav ul {
+    display: flex;
+    justify-self: center;
+  }
+
+  nav ul li {
+    list-style: none;
+    margin: 0 23px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+  }
+
+  nav ul li a:hover {
+    color: rgb(149, 149, 239);
+    font-size: 1.15rem;
+  }
+
+  main hr {
+    border: 0;
+    background-color: #9c97f1;
+    height: 1.2px;
+    margin: 40px 84px;
+  }
+  .left {
+    font-size: 1.5rem;
+  }
+
+  .firstSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 130px 0;
+  }
+
+  .firstSection > div {
+    width: 30%;
+  }
+
+  .leftSection {
+    font-size: 2.5rem;
+  }
+  .leftSection .btn{
+    padding: 12px;
+    background-color: #1e2167;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .leftSection .buttons{
+    padding: 50px 0;
+  }
+
+  .rightSection img {
+    width: 80%;
+  }
+  .purple {
+    color: rgb(156, 77, 229);
+  }
+
+  .text-gray {
+    color: gray;
+  }
+
+  #element {
+    color: rgb(156, 77, 229);
+  }
+
+  
+
+  /* Work Experience Section */
+.secondSection {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #151550, #2323a6);
+    color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin: 50px auto;
+    max-width: 90%;
+  }
+  
+  .secondSection span.text-gray {
+    color: #bbbbbb;
+    font-size: 1.2rem;
+  }
+  
+  .secondSection h1 {
+    font-size: 2.5rem;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    color: #ffffff;
+  }
+  
+  /* Work Experience Cards Container */
+  .secondSection .box {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 90%;
+    margin: auto;
+  }
+  
+  /* Work Experience Vertical Card */
+  .vertical {
+    background: #29296e;
+    padding: 30px 20px;
+    width: 30%;
+    min-width: 250px;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .vertical img.image-top {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Vertical Card Title */
+  .vertical-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 15px;
+  }
+  
+  /* Vertical Card Description */
+  .vertical-desc {
+    font-size: 1rem;
+    color: #e0e0e0;
+    text-align: justify;
+    line-height: 1.5;
+    margin: 10px 0;
+  }
+  
+  /* Card Hover Effect */
+  .vertical:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  .vertical:hover img.image-top {
+    transform: scale(1.2);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .secondSection .box {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .vertical {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  }
+  
+
+  /* Contact Section */
+.contactSection {
+    padding: 60px 0;
+    background: linear-gradient(to right, #1c1c64, #1e1e66);
+    border-radius: 15px;
+    margin: 60px auto;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    color: white;
+  }
+  
+  .contactSection h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  .contact-form {
+    width: 60%;
+    margin: auto;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Form Inputs and Textarea */
+  .form-group {
+    margin: 15px 0;
+    text-align: left;
+  }
+  
+  .contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #cccccc;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 2px solid transparent;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    transition: all 0.3s ease;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: #9c97f1;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  .contact-form textarea {
+    resize: none;
+  }
+  
+  /* Submit Button */
+  .contact-form .btn {
+    padding: 15px 30px;
+    border: none;
+    background: #1e2167;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+  }
+  
+  .contact-form .btn:hover {
+    background: #ffffff;
+    color: #1e2167;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+
+
+  /* Skills Section */
+.skillsSection {
+    padding: 60px 0;
+    background: #101028;
+    text-align: center;
+    color: #f3f3f3;
+  }
+  
+  .skillsSection h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #ffffff;
+  }
+  
+  /* Skills Container */
+  .skills-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: auto;
+  }
+  
+  /* Individual Skill */
+  .skill {
+    width: 45%;
+    margin: 15px 0;
+  }
+  
+  .skill span {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    display: inline-block;
+    color: #9c97f1;
+  }
+  
+  /* Progress Bar Container */
+  .progress-bar {
+    background: #2e2e5c;
+    border-radius: 20px;
+    height: 12px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .progress-bar div {
+    height: 100%;
+    border-radius: 20px;
+    animation: progress-animation 2s ease-out;
+  }
+  
+  /* Progress Bar Animations */
+  @keyframes progress-animation {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  /* Individual Skill Bars */
+  .html {
+    width: 90%;
+    background: linear-gradient(45deg, #e44d26, #f16529);
+  }
+  
+  .js {
+    width: 80%;
+    background: linear-gradient(45deg, #f0db4f, #efd81d);
+  }
+  
+  .react {
+    width: 75%;
+    background: linear-gradient(45deg, #61dafb, #21a1f1);
+  }
+  
+  .php {
+    width: 85%;
+    background: linear-gradient(45deg, #777bb3, #8993be);
+  }
+  
+  /* Skill Hover Effects */
+  .skill:hover span {
+    color: #ffffff;
+  }
+  
+  .skill:hover .progress-bar {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .skill:hover .progress-bar div {
+    opacity: 0.8;
+    transform: scaleX(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+
+/* Projects Section */
+.projectsSection {
+    padding: 60px 0;
+    background: #0f0f3e;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .projectsSection h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #ffffff;
+  }
+  
+  /* Projects Container */
+  .projects-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 90%;
+    margin: auto;
+  }
+  
+  /* Project Cards */
+  .project-card {
+    background: #1c1c3c;
+    border-radius: 15px;
+    padding: 25px 20px;
+    width: 30%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
+  }
+  
+  .project-card h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #f3f3f3;
+  }
+  
+  .project-card p {
+    color: #cccccc;
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Project Button Styling */
+  .project-btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 15px;
+    background: #3333a3;
+    color: #ffffff;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .project-btn:hover {
+    background: #5555dd;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+  }
+  
+  /* Project Card Hover Effect */
+  .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  }
+  
+  .project-card:hover h3 {
+    color: #d7d7ff;
+  }
+  
+  .project-card:hover p {
+    color: #eeeeee;
+  }
+  
+
+  footer {
+    background-color: #0e0e1a;
+    padding: 30px 50px;
+    color: #dddddd;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .footer-left {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .footer-links,
+  .footer-social {
+    flex: 1;
+    min-width: 200px;
+    margin-left: 20px;
+  }
+  
+  .footer h3,
+  .footer h4 {
+    color: rgb(156, 77, 229);
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer ul li a {
+    text-decoration: none;
+    color: #bbbbbb;
+    transition: color 0.3s ease;
+  }
+  
+  .footer ul li a:hover {
+    color: rgb(156, 77, 229);
+  }
+  
+  .footer-rights {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #333333;
+    padding: 10px 0;
+  }
+  
+  

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vishal - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+        <nav>
+          <div class="left">Vishal Portfolio</div>
+          <div class="right">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact Me</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      
+
+    <main>
+
+        
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi, My name is <span class="purple">Vishal</span>
+          <div>and I am a passionate</div>
+          <span id="element"></span>
+          <div class="buttons">
+            <a href="Vishal_Makwana-Resume(F).pdf" download>
+            <button class="btn">Download Resume</button>
+            </a>
+            <a href="https://github.com/VishalMakwana1833">
+                <button class="btn">Visit Github</button>
+            </a>
+        </div>
+        </div>
+        <div class="rightSection">
+          <img src="bg.png" alt="" />
+        </div>
+      </section>
+      <hr />
+  
+      
+      
+      <section class="secondSection">
+        <span class="text-gray">What I have done so far</span>
+        <h1>Work Experience</h1>
+
+        <div class="box">
+          <div class="vertical">
+            <img class="image-top" src="developer.png" alt="" />
+            <div class="vertical-title">
+              C++ Development Intern (Mar23-Apr23)
+            </div>
+            <div class="vertical-desc">
+              Developed and implemented C++ applications and software solutions
+              to meet project requirements.Collaborated with team members to
+              design and implement new features and enhancements. Conducted code
+              reviews and testing to ensure high quality and reliable software.
+              Worked closely with senior developers to troubleshoot and debug
+              issues in existing code.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="developer.png" alt="" />
+            <div class="vertical-title">
+              PHP Development Intern (Sept23-Oct23)
+            </div>
+            <div class="vertical-desc">
+              Assisted in the development and maintenance of web applications
+              using PHP and MySQL.. Implemented form validation and data
+              sanitization using PHP.Make a form submission page using PHP.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section class="projectsSection" id="projects">
+        <h1 class="section-title">My Projects</h1>
+        <div class="projects-container">
+          <div class="project-card">
+            <h3>AI-Buddy</h3>
+            <p>
+                Providing timely and relevant information to users based on their
+                preferences and needs.Assisting users in completing tasks, such as scheduling
+                appointments and setting reminders.Troubleshooting technical issues and providing technical support to
+                users.Analyzing user data and behavior patterns to make personalized
+                recommendations.Continuously improving the AI-Buddy's functionality and
+                capabilities through machine learning and artificial intelligence
+                techniques.
+            </p>
+            <a href="#" class="project-btn">View Project</a>
+          </div>
+          <div class="project-card">
+            <h3>Chat Fusion</h3>
+            <p>
+                Developed and maintained real-time chat application using
+                technologies such as Node.js, Socket.io, and React.
+                Implemented features such as user authentication, chat rooms,
+                message encryption, and push notifications.
+                Conducted code reviews, wrote unit tests, and resolved bugs to
+                ensure application stability and performance.
+                Collaborated with cross-functional teams to gather requirements,
+                design solutions, and prioritize tasks.
+                Provided technical support and training to team members and end
+                users.
+            </p>
+            <a href="#" class="project-btn">View Project</a>
+          </div>
+          <div class="project-card">
+            <h3>Personal Portfolio</h3>
+            <p>
+              Created a responsive personal portfolio website using HTML,CSS and
+              JavaScript to showcase projects and skills. Utilized HTML to
+              structure the content, including sections like About
+              Me,Projects,Skills,and Contact.Used Flexbox and Grid Layout
+              techniques for positioning elements and managing the website’s
+              layout.
+            </p>
+            <a href="#" class="project-btn">View Project</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section class="skillsSection" id="skills">
+        <h1 class="section-title">My Skills</h1>
+        <div class="skills-container">
+          <div class="skill">
+            <span>HTML & CSS</span>
+            <div class="progress-bar"><div class="html"></div></div>
+          </div>
+          <div class="skill">
+            <span>JavaScript</span>
+            <div class="progress-bar"><div class="js"></div></div>
+          </div>
+          <div class="skill">
+            <span>React.js</span>
+            <div class="progress-bar"><div class="react"></div></div>
+          </div>
+          <div class="skill">
+            <span>PHP</span>
+            <div class="progress-bar"><div class="php"></div></div>
+          </div>
+          <div class="skill">
+            <span>Python</span>
+            <div class="progress-bar"><div class="python"></div></div>
+          </div>
+          <div class="skill">
+            <span>MySQL</span>
+            <div class="progress-bar"><div class="mysql"></div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Form Section -->
+      <section class="contactSection" id="contact">
+        <h1 class="section-title">Contact Me</h1>
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-left">
+          <h3>Vishal's Developer Portfolio</h3>
+          <p>Connecting ideas with technology.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4>Follow Me</h4>
+          <ul>
+            <li>
+              <a href="https://github.com/VishalMakwana1833" target="_blank"
+                >GitHub</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/vishal-makwana-4ab702221/"
+                target="_blank"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-rights">
+        <p>Copyright &#169; 2024 Vishal Portfolio | All rights reserved</p>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer", "&amp; Software Developer"],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
